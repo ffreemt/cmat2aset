@@ -21,6 +21,7 @@
         "publish": "poetry build && poetry publish",
         "black": "black tests cmat2aset",
         "flake8": "flake8 tests cmat2aset",
+        "pflake8": "pflake8 tests cmat2aset",
         "pep257": "pep257 tests cmat2aset",
         "final": "run-s pep257 black flake8 pytest"
     }
