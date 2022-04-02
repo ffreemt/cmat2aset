@@ -24,7 +24,7 @@ from tests.load_cmat_cmat10 import cmat  # , cmat10
 
 def test_version():
     """Test version."""
-    assert __version__ == "0.1.0"
+    assert __version__[:3] == "0.1"
 
 
 def test_sanity():

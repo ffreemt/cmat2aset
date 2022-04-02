@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "cmat2aset"
-version = "0.1.0"
+version = "0.1.0-alpha.4"
 description = "correlation matrix to align set "
 authors = ["ffreemt"]
 license = "MIT"

@@ -30,11 +30,15 @@ def cmat2aset(
         logger.exception(e)
         raise
 
+    # transpose so that there is no need
+    # to do so when calling cmat2aset
+    cmat = cmat.T
+
     if np.array(cmat).ndim != 2:
         raise Exception("Expected a 2d array...")
 
     for min_s in range(min_samples):
-        logger.info(" min_samples, using %s", min_samples - min_s)
+        logger.debug(" min_samples, using %s", min_samples - min_s)
         try:
             pset = gen_pset(
                 cmat,
@@ -66,6 +70,8 @@ def cmat2aset(
                 round(elm2, 2) if isinstance(elm2, float) else elm2,
             )
         )
+
+    logger.debug("exit")
 
     # return np.array(aset)
     return _

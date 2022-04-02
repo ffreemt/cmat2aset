@@ -141,3 +141,5 @@ cython_debug/
 links/
 # .gitignore
 node_modules
+cmat2aset/cmat2aset.py
+.gitignore
