@@ -46,6 +46,6 @@ def test_cmat2aset_zero():
 def test_cmat2aset_minus_two():
     """Test '0' (str) converted to 0 (in)."""
     res = cmat2aset(cmat)
-    assert isinstance(res[-2][0], int)
-    assert isinstance(res[-2][1], str)
+    assert isinstance(res[-2][0], str)
+    assert isinstance(res[-2][1], int)
     assert isinstance(res[-2][2], str)
