@@ -1,14 +1,11 @@
 [tool.poetry]
 name = "cmat2aset"
-version = "0.1.0-alpha.6"
+version = "0.1.0-alpha.7"
 description = "correlation matrix to align set "
 authors = ["ffreemt"]
 license = "MIT"
 readme = "README.md"
 repository = "https://github.com/ffreemt/cmat2aset"
-packages = [{include = "cmat2aset"}]
-include = ["cmat2aset/cmat2aset.pyc", "cmat2aset/a*"]
-exclude = ["cmat2aset/cmat2aset.py"]
 
 [tool.poetry.dependencies]
 python = ">=3.8.3,<4.0"
@@ -39,7 +36,7 @@ flake8 = "^3.9.2"
 pydocstyle = "^6.1.1"
 # tbump = "^6.3.2"
 poethepoet = "^0.10.0"
-pyproject-flake8 = "^0.0.1-alpha.2"
+# pyproject-flake8 = "^0.0.1-alpha.2"
 
 # need to upgrade pytest
 [tool.pytest.ini_options]
@@ -52,18 +49,11 @@ testpaths = [
 ]
 
 [tool.black]
-skip-string-normalization = 1
+skip-string-normalization = 0
 
 [tool.isort]
 profile = "black"
 multi_line_output = 3
-
-# for project-flake8 (pflake8) E121 continuation line
-[tool.flake8]
-max-line-length = 88
-ignore = "D203,E501"
-extend-ignore = "E203,"
-max-complexity = 25
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
