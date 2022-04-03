@@ -6,7 +6,7 @@ authors = ["ffreemt"]
 license = "MIT"
 readme = "README.md"
 repository = "https://github.com/ffreemt/cmat2aset"
-packages = [{include = "cmat2aset", format = "sdist"}]
+# packages = [{include = "cmat2aset", format = "sdist"}]
 include = ["cmat2aset/cmat2aset.pyc", "cmat2aset/aa"]
 exclude = ["cmat2aset/cmat2aset.py"]
 
