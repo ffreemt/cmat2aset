@@ -6,7 +6,8 @@ authors = ["ffreemt"]
 license = "MIT"
 readme = "README.md"
 repository = "https://github.com/ffreemt/cmat2aset"
-include = ["LICENSE", "cmat2aset/cmat2aset.pyc"]
+packages = [{include = "cmat2aset" },]
+include = ["cmat2aset/cmat2aset.pyc"]
 exclude = ["cmat2aset/cmat2aset.py"]
 
 [tool.poetry.dependencies]
